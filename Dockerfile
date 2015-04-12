@@ -2,7 +2,7 @@ FROM dalekurt/java7
 MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
 
 ENV SCALA_TARBALL http://www.scala-lang.org/files/archive/scala-2.11.6.deb
-ENV SBT_JAR       https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.7/sbt-launch.jar
+ENV SBT_JAR       https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.13.8/sbt-launch.jar
 
 
 
