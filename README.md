@@ -3,6 +3,8 @@
 ## Summary
 Repository name in Docker Hub: **[dalekurt/scala](https://hub.docker.com/u/dalekurt/scala)**
 
+This repository contains Dockerized [Scala](http://www.scala-lang.org), published to the public [Docker Hub](https://registry.hub.docker.com/) via **automated build**.
+
 ## Configuration
 
 - OS Ubuntu 14.04
