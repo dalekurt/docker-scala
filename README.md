@@ -11,7 +11,7 @@ Repository name in Docker Hub: **[dalekurt/scala](https://hub.docker.com/u/dalek
 - sbt 0.13.8
 
 ### Dependencies
-* [dalekurt/java7](https://github.com/dalekurt/docker-java7) [Docker Hub](https://hub.docker.com/u/dalekurt/java7) 
+* dalekurt/java7 [GitHub](https://github.com/dalekurt/docker-java7) / [Docker Hub](https://hub.docker.com/u/dalekurt/java7) 
 
 
 ## Usage
