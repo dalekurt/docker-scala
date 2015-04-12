@@ -36,11 +36,12 @@ RUN \
 
 
 COPY sbt /usr/local/bin/
-
+RUN  chmod +x /usr/local/bin/sbt
 
 # create an empty sbt project;
 # then fetch all sbt jars from Maven repo so that your sbt will be ready to be used when you launch the image
 COPY test-sbt.sh /tmp/
+RUN chmod +x /tmp/test-sbt.sh
 RUN cd /tmp  && \
     ./test-sbt.sh  && \
     rm -rf *
