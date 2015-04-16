@@ -29,14 +29,14 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
 
 # make sbt executable
-COPY sbt /usr/local/bin/
-RUN  chmod +x /usr/local/bin/sbt
+ADD scripts/sbt /usr/local/bin/
+RUN chmod +x /usr/local/bin/sbt
 
 # Create an empty sbt project
 ADD scripts/test-sbt.sh /tmp/
 RUN cd /tmp && \
     ./test-sbt.sh && \
-    rm -rf 
+    rm -rf *
 
 # print versions
 #RUN java -version
@@ -48,4 +48,4 @@ RUN cd /tmp && \
 #RUN sbt --version
 
 # Run scala as default command
-CMD ["/bin/bash"]
+CMD ["scala"]
