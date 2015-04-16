@@ -13,6 +13,8 @@ ENV SBT_VERSION 0.13.8
 ENV SCALA_TARBALL http://www.scala-lang.org/files/archive/scala-${SCALA_VERSION}.deb
 ENV SBT_JAR       https://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/${SBT_VERSION}/sbt-launch.jar
 
+RUN apt-get update; apt-get install -y maven
+
 # Typesafe repo (contains old versions but they have all dependencies we need later on)
 RUN wget http://apt.typesafe.com/repo-deb-build-0002.deb
 RUN dpkg -i repo-deb-build-0002.deb
