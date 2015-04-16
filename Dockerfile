@@ -46,3 +46,6 @@ RUN scala -version || echo '' > /dev/null
 
 # fetches all sbt jars from Maven repo so that your sbt will be ready to be used when you launch the image
 RUN sbt --version
+
+# Run scala as default command
+CMD ["/bin/bash"]
