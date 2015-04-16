@@ -39,13 +39,13 @@ RUN cd /tmp && \
     rm -rf 
 
 # print versions
-RUN java -version
+#RUN java -version
 
 # scala -version returns code 1 instead of 0 thus || echo '' > /dev/null
-RUN scala -version || echo '' > /dev/null
+#RUN scala -version || echo '' > /dev/null
 
 # fetches all sbt jars from Maven repo so that your sbt will be ready to be used when you launch the image
-RUN sbt --version
+#RUN sbt --version
 
 # Run scala as default command
 CMD ["/bin/bash"]
