@@ -50,4 +50,5 @@ RUN cd /tmp && \
 #RUN sbt --version
 
 # Run scala as default command
-CMD ["scala"]
+#CMD ["scala"]
+CMD ["bin/bash"]
