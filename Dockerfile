@@ -4,7 +4,7 @@
 # Docker Hub - http://hub.docker.com/u/dalekurt/scala
 # Twitter - http://www.twitter.com/dalekurt
 
-FROM dalekurt/base
+FROM dalekurt/java7
 
 MAINTAINER Dale-Kurt Murray "dalekurt.murray@gmail.com"
 
