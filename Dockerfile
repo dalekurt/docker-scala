@@ -51,4 +51,4 @@ RUN cd /tmp && \
 
 # Run scala as default command
 #CMD ["scala"]
-CMD ["bin/bash"]
+CMD ["/bin/bash"]
