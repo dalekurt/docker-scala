@@ -40,15 +40,10 @@ RUN cd /tmp && \
     ./test-sbt.sh && \
     rm -rf *
 
-# print versions
-#RUN java -version
-
-# scala -version returns code 1 instead of 0 thus || echo '' > /dev/null
-#RUN scala -version || echo '' > /dev/null
-
-# fetches all sbt jars from Maven repo so that your sbt will be ready to be used when you launch the image
-#RUN sbt --version
-
-# Run scala as default command
-#CMD ["scala"]
-CMD ["/bin/bash"]
+EXPOSE 9000
+RUN mkdir /opt/app
+WORKDIR /opt/app
+# Define default command.
+CMD ["mvn", "install"]
+WORKDIR /opt/app/mystuff-play-scala-webapp
+CMD ["sbt", "run"]
