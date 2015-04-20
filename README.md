@@ -12,7 +12,7 @@ This repository contains Dockerized [Scala](http://www.scala-lang.org), publishe
 - Scala 2.11.6
 - sbt 0.13.8
 
-### Dependencies
+### Image inheritence 
 * dalekurt/java7 [GitHub](https://github.com/dalekurt/docker-java7) / [Docker Hub](https://hub.docker.com/u/dalekurt/java7) 
 
 
@@ -20,5 +20,5 @@ This repository contains Dockerized [Scala](http://www.scala-lang.org), publishe
 #### Run `scala` REPL
 
 ```bash
-$ docker run -it --rm dalekurt/scala
+$ docker run -i -t --rm dalekurt/scala
 ```
