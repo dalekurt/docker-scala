@@ -42,12 +42,12 @@ RUN chmod +x /usr/local/bin/sbt
 
 EXPOSE 9000
 
-RUN mkdir /opt/app
-WORKDIR /opt/app
+#RUN mkdir /opt/app
+#WORKDIR /opt/app
 # Define default command.
-ENTRYPOINT ["mvn"]
-CMD ["install"]
+#ENTRYPOINT ["mvn"]
+#CMD ["install"]
 
-WORKDIR /opt/app/mystuff-play-scala-webapp
-ENTRYPOINT ["sbt"]
-CMD ["run"]
+#WORKDIR /opt/app/mystuff-play-scala-webapp
+#ENTRYPOINT ["sbt"]
+#CMD ["run"]
