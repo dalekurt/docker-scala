@@ -40,10 +40,14 @@ RUN chmod +x /usr/local/bin/sbt
 #    ./test-sbt.sh && \
 #    rm -rf *
 
-#EXPOSE 9000
-#RUN mkdir /opt/app
-#WORKDIR /opt/app
+EXPOSE 9000
+
+RUN mkdir /opt/app
+WORKDIR /opt/app
 # Define default command.
-#CMD ["mvn", "install"]
-#WORKDIR /opt/app/mystuff-play-scala-webapp
-#CMD ["sbt", "run"]
+ENTRYPOINT ["mvn"]
+CMD ["install"]
+
+WORKDIR /opt/app/mystuff-play-scala-webapp
+ENTRYPOINT ["sbt"]
+CMD ["run"]
